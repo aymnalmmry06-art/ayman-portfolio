@@ -550,6 +550,7 @@ img {
   z-index: 50;
   display: flex;
   justify-content: flex-start;
+  direction: ltr;
   pointer-events: none;
   background: rgba(27, 23, 18, 0);
   transition: background 0.25s ease;
@@ -564,6 +565,7 @@ img {
   width: min(100%, 420px);
   height: 100%;
   padding: 20px;
+  direction: rtl;
   background: var(--paper);
   box-shadow: -20px 0 60px rgba(0, 0, 0, 0.22);
   transform: translateX(-100%);
@@ -672,8 +674,23 @@ img {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .hero {
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.84fr);
+    gap: 34px;
+  }
+
   .nav-links {
     display: none;
+  }
+}
+
+@media (max-width: 940px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-copy h1 {
+    font-size: 3.4rem;
   }
 }
 
@@ -698,6 +715,14 @@ img {
 
   .hero {
     padding-top: 34px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.05rem, 10vw, 3.1rem);
+  }
+
+  .hero-copy p {
+    font-size: 0.96rem;
   }
 
   .hero-visual,
@@ -725,5 +750,49 @@ img {
 
   .search-box {
     width: 100%;
+  }
+
+  .product-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero,
+  .section {
+    padding-inline: 14px;
+  }
+
+  .trust-strip,
+  .gift-band {
+    margin-inline: 14px;
+  }
+
+  .hero-actions .btn,
+  .gift-band .btn {
+    width: 100%;
+  }
+
+  .hero-stats span {
+    width: 100%;
+  }
+
+  .filters {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  .filter {
+    width: 100%;
+  }
+
+  .product-buy {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .add-button {
+    min-height: 44px;
   }
 }
