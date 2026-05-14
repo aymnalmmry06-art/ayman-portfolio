@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102B25"/><stop offset="1" stop-color="#061513"/></linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2B1A0F"/><stop offset="1" stop-color="#1C1008"/></linearGradient>
     <linearGradient id="jar" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F9D77D"/><stop offset=".35" stop-color="#D8961B"/><stop offset="1" stop-color="#75410A"/></linearGradient>
     <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F7DA88"/><stop offset="1" stop-color="#A87016"/></linearGradient>
   </defs>
   <rect width="900" height="700" rx="28" fill="url(#bg)"/>
   <circle cx="710" cy="135" r="145" fill="#C9962C" opacity=".18"/>
-  <circle cx="180" cy="600" r="210" fill="#1D5B49" opacity=".28"/>
+  <circle cx="180" cy="600" r="210" fill="#9D5F19" opacity=".24"/>
   <g transform="translate(245 95)">
     <rect x="142" y="20" width="170" height="82" rx="24" fill="#F7DA88"/>
     <rect x="105" y="88" width="244" height="374" rx="58" fill="#FFE9B8" opacity=".34"/>
     <rect x="125" y="115" width="204" height="325" rx="44" fill="url(#jar)"/>
-    <rect x="155" y="210" width="144" height="112" rx="20" fill="#0E2C26" stroke="url(#gold)" stroke-width="7"/>
+    <rect x="155" y="210" width="144" height="112" rx="20" fill="#2B1A0F" stroke="url(#gold)" stroke-width="7"/>
     <text x="227" y="262" text-anchor="middle" font-size="44" font-weight="800" fill="#F9D77D" font-family="Arial">سدر</text>
     <text x="227" y="302" text-anchor="middle" font-size="25" fill="#FFF5D6" font-family="Arial">دوعني ملكي</text>
     <path d="M170 124c20 34 25 72 2 110" fill="none" stroke="#FFF4CE" stroke-width="14" stroke-linecap="round" opacity=".45"/>

@@ -1,22 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071B18"/><stop offset=".55" stop-color="#102B25"/><stop offset="1" stop-color="#2B1B0A"/></linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1C1008"/><stop offset=".55" stop-color="#4A2A12"/><stop offset="1" stop-color="#7A4612"/></linearGradient>
     <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F9DC8D"/><stop offset="1" stop-color="#A46C16"/></linearGradient>
   </defs>
   <rect width="900" height="700" rx="28" fill="url(#bg)"/>
   <circle cx="210" cy="156" r="112" fill="#C9962C" opacity=".18"/>
   <g transform="translate(190 166)">
-    <rect x="55" y="190" width="470" height="178" rx="32" fill="#0B2420" stroke="url(#gold)" stroke-width="8"/>
+    <rect x="55" y="190" width="470" height="178" rx="32" fill="#2B1A0F" stroke="url(#gold)" stroke-width="8"/>
     <rect x="55" y="154" width="470" height="72" rx="22" fill="url(#gold)"/>
     <rect x="265" y="154" width="52" height="214" fill="#EBD083" opacity=".9"/>
     <path d="M210 150c-52-48-6-94 55-14 55-84 113-38 46 16" fill="none" stroke="#EBD083" stroke-width="18" stroke-linecap="round"/>
     <g transform="translate(95 -8)">
       <rect x="0" y="56" width="92" height="210" rx="28" fill="#C07B1D"/>
-      <rect x="16" y="122" width="60" height="62" rx="12" fill="#132F29" stroke="#EBD083" stroke-width="5"/>
+      <rect x="16" y="122" width="60" height="62" rx="12" fill="#2B1A0F" stroke="#EBD083" stroke-width="5"/>
     </g>
     <g transform="translate(366 -8)">
       <rect x="0" y="56" width="92" height="210" rx="28" fill="#E0BD6E"/>
-      <rect x="16" y="122" width="60" height="62" rx="12" fill="#132F29" stroke="#EBD083" stroke-width="5"/>
+      <rect x="16" y="122" width="60" height="62" rx="12" fill="#2B1A0F" stroke="#EBD083" stroke-width="5"/>
     </g>
   </g>
   <text x="450" y="548" text-anchor="middle" font-size="44" font-weight="800" fill="#F7D889" font-family="Arial">VIP</text>
