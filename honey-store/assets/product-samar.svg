@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#18100B"/><stop offset="1" stop-color="#07201B"/></linearGradient>
+    <linearGradient id="honey" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#C17316"/><stop offset="1" stop-color="#361B08"/></linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFE19A"/><stop offset="1" stop-color="#9C6419"/></linearGradient>
+  </defs>
+  <rect width="900" height="700" rx="28" fill="url(#bg)"/>
+  <rect x="98" y="510" width="704" height="46" rx="23" fill="#000" opacity=".22"/>
+  <g transform="translate(220 84)">
+    <rect x="160" y="24" width="150" height="70" rx="20" fill="url(#rim)"/>
+    <rect x="120" y="85" width="230" height="376" rx="54" fill="#FFF1C2" opacity=".22"/>
+    <rect x="140" y="120" width="190" height="312" rx="42" fill="url(#honey)"/>
+    <rect x="157" y="222" width="156" height="104" rx="20" fill="#130D09" stroke="url(#rim)" stroke-width="7"/>
+    <text x="235" y="274" text-anchor="middle" font-size="46" font-weight="800" fill="#EBC16A" font-family="Arial">سمر</text>
+    <text x="235" y="312" text-anchor="middle" font-size="24" fill="#FFF0C4" font-family="Arial">حضرمي</text>
+    <path d="M180 130c18 38 15 75 2 114" fill="none" stroke="#FFE5A7" stroke-width="14" stroke-linecap="round" opacity=".28"/>
+  </g>
+  <g transform="translate(585 150) rotate(16)">
+    <rect x="0" y="0" width="250" height="28" rx="14" fill="#8B5C28"/>
+    <rect x="34" y="20" width="84" height="148" rx="24" fill="#D99B32"/>
+    <path d="M34 70h84M34 112h84" stroke="#7D4310" stroke-width="14" opacity=".55"/>
+  </g>
+  <circle cx="150" cy="144" r="74" fill="#B2701F" opacity=".28"/>
+</svg>

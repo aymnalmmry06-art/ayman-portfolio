@@ -7,7 +7,7 @@ const products = [
     price: 430,
     weight: "500 جم",
     origin: "وادي دوعن",
-    image: "https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=900&q=85",
+    image: "assets/product-sidr.svg",
     desc: "كثافة عالية ونكهة عميقة لهدايا العملاء والضيافة الفاخرة."
   },
   {
@@ -18,7 +18,7 @@ const products = [
     price: 320,
     weight: "500 جم",
     origin: "شبوة",
-    image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?auto=format&fit=crop&w=900&q=85",
+    image: "assets/product-sidr.svg",
     desc: "سدر أصيل بطعم متوازن يناسب الاستخدام اليومي والضيافة."
   },
   {
@@ -29,7 +29,7 @@ const products = [
     price: 250,
     weight: "250 جم",
     origin: "حجة",
-    image: "https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=900&q=85",
+    image: "assets/product-sidr.svg",
     desc: "اختيار ممتاز لمن يريد تجربة سدر قوية بسعر متوسط."
   },
   {
@@ -40,7 +40,7 @@ const products = [
     price: 178,
     weight: "500 جم",
     origin: "حضرموت",
-    image: "https://images.unsplash.com/photo-1590075865003-e48b248c6831?auto=format&fit=crop&w=900&q=85",
+    image: "assets/product-samar.svg",
     desc: "لون داكن ورائحة قوية لمحبي العسل الثقيل والغني."
   },
   {
@@ -51,7 +51,7 @@ const products = [
     price: 115,
     weight: "250 جم",
     origin: "أبين",
-    image: "https://images.unsplash.com/photo-1471943311424-646960669fbc?auto=format&fit=crop&w=900&q=85",
+    image: "assets/product-samar.svg",
     desc: "مناسب للاستخدام المتكرر والتحلية الطبيعية اليومية."
   },
   {
@@ -62,7 +62,7 @@ const products = [
     price: 358,
     weight: "250 جم",
     origin: "إب",
-    image: "https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=900&q=85",
+    image: "assets/product-white.svg",
     desc: "عسل أبيض بقوام ناعم ونكهة لطيفة، مثالي للهدايا."
   },
   {
@@ -73,7 +73,7 @@ const products = [
     price: 85,
     weight: "250 جم",
     origin: "جبال اليمن",
-    image: "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&w=900&q=85",
+    image: "assets/product-white.svg",
     desc: "خفيف ولذيذ ومناسب للشاي والفطور والاستخدام العائلي."
   },
   {
@@ -84,7 +84,7 @@ const products = [
     price: 690,
     weight: "3 عبوات",
     origin: "تشكيلة مختارة",
-    image: "https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=900&q=85",
+    image: "assets/product-gift.svg",
     desc: "مجموعة فاخرة من السدر والسمر والعسل الأبيض بتغليف هدايا."
   }
 ];

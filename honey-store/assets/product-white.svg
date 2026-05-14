@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F8EBC8"/><stop offset="1" stop-color="#153B32"/></linearGradient>
+    <linearGradient id="cream" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFF8DD"/><stop offset="1" stop-color="#D8B86B"/></linearGradient>
+    <linearGradient id="label" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#133D35"/><stop offset="1" stop-color="#071B18"/></linearGradient>
+  </defs>
+  <rect width="900" height="700" rx="28" fill="url(#bg)"/>
+  <circle cx="722" cy="164" r="150" fill="#FFF3C9" opacity=".35"/>
+  <g transform="translate(290 88)">
+    <rect x="110" y="34" width="154" height="72" rx="22" fill="#E2B953"/>
+    <rect x="70" y="98" width="234" height="368" rx="58" fill="#FFFFFF" opacity=".45"/>
+    <rect x="92" y="132" width="190" height="304" rx="42" fill="url(#cream)"/>
+    <rect x="112" y="226" width="150" height="104" rx="20" fill="url(#label)" stroke="#E7BE55" stroke-width="7"/>
+    <text x="187" y="276" text-anchor="middle" font-size="36" font-weight="800" fill="#F5D989" font-family="Arial">أبيض</text>
+    <text x="187" y="313" text-anchor="middle" font-size="23" fill="#FFF6DD" font-family="Arial">عودي</text>
+    <path d="M126 142c20 34 21 70 4 106" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round" opacity=".62"/>
+  </g>
+  <g fill="#F0CB6A" opacity=".85">
+    <polygon points="135,470 178,494 178,544 135,569 92,544 92,494"/>
+    <polygon points="200,510 243,534 243,584 200,609 157,584 157,534"/>
+    <polygon points="135,550 178,574 178,624 135,649 92,624 92,574"/>
+  </g>
+</svg>
