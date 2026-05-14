@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="متجر وادي الذهب للعسل اليمني، تجربة تجارة إلكترونية فخمة وعملية لبيع العسل الطبيعي."
+    />
+    <title>وادي الذهب | متجر العسل اليمني</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="وادي الذهب">
+        <span class="brand-mark">و</span>
+        <span>
+          <strong>وادي الذهب</strong>
+          <small>عسل يمني طبيعي</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="روابط الموقع">
+        <a href="#products">المنتجات</a>
+        <a href="#quality">الجودة</a>
+        <a href="#gift">الهدايا</a>
+        <a href="#contact">التواصل</a>
+      </nav>
+
+      <button class="cart-button" type="button" id="openCart" aria-label="فتح السلة">
+        <span>السلة</span>
+        <strong id="cartCount">0</strong>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">قطفات مختارة من وديان اليمن</p>
+          <h1>عسل يمني فاخر بتجربة شراء تليق بقيمة المنتج.</h1>
+          <p>
+            متجر عملي مصمم لعرض أنواع العسل، بناء الثقة، تسهيل المقارنة، وتحويل
+            اهتمام العميل إلى طلب سريع عبر واتساب.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#products">تسوق الآن</a>
+            <a class="btn secondary" href="#quality">معايير الجودة</a>
+          </div>
+          <div class="hero-stats" aria-label="إحصائيات المتجر">
+            <span><strong>18</strong> منتج مختار</span>
+            <span><strong>24h</strong> تجهيز الطلب</span>
+            <span><strong>100%</strong> طبيعي</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="منتج عسل فاخر">
+          <img
+            src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=1200&q=85"
+            alt="وعاء عسل طبيعي فاخر"
+          />
+          <div class="hero-badge">
+            <span>الأكثر طلباً</span>
+            <strong>سدر دوعني ملكي</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="مميزات المتجر">
+        <div>
+          <strong>فحص جودة</strong>
+          <span>فرز حسب اللون والقوام والرائحة</span>
+        </div>
+        <div>
+          <strong>تغليف فاخر</strong>
+          <span>عبوات هدايا وتجهيز للشحن</span>
+        </div>
+        <div>
+          <strong>طلب سريع</strong>
+          <span>سلة واتساب بدون تعقيد</span>
+        </div>
+      </section>
+
+      <section class="section products" id="products">
+        <div class="section-heading">
+          <span>المتجر</span>
+          <h2>اختر العسل المناسب حسب الاستخدام والميزانية.</h2>
+        </div>
+
+        <div class="shop-toolbar" aria-label="أدوات تصفية المنتجات">
+          <div class="filters" id="filters">
+            <button class="filter active" type="button" data-filter="all">الكل</button>
+            <button class="filter" type="button" data-filter="sider">سدر</button>
+            <button class="filter" type="button" data-filter="samar">سمر</button>
+            <button class="filter" type="button" data-filter="white">عسل أبيض</button>
+            <button class="filter" type="button" data-filter="gift">هدايا</button>
+          </div>
+
+          <label class="search-box">
+            <span>بحث</span>
+            <input id="searchInput" type="search" placeholder="ابحث عن سدر، سمر، هدية..." />
+          </label>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="section quality" id="quality">
+        <div class="quality-image">
+          <img
+            src="https://images.unsplash.com/photo-1471943311424-646960669fbc?auto=format&fit=crop&w=1100&q=85"
+            alt="عسل طبيعي مع أدوات خشبية"
+          />
+        </div>
+        <div class="quality-copy">
+          <span class="eyebrow">لماذا يثق العميل؟</span>
+          <h2>تفاصيل صغيرة تجعل المتجر يبدو حقيقياً وقابلاً للبيع.</h2>
+          <div class="quality-list">
+            <article>
+              <strong>وصف واضح</strong>
+              <p>كل منتج يوضح المصدر، الاستخدام، درجة الفخامة، والحجم.</p>
+            </article>
+            <article>
+              <strong>أسعار قابلة للمقارنة</strong>
+              <p>عرض السعر والوزن والتصنيف يساعد العميل على القرار بسرعة.</p>
+            </article>
+            <article>
+              <strong>مسار طلب قصير</strong>
+              <p>إضافة للسلة ثم إرسال الطلب مباشرة عبر واتساب برسالة منظمة.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="gift-band" id="gift">
+        <div>
+          <span>صناديق VIP</span>
+          <h2>هدايا عسل فاخرة للشركات والمناسبات.</h2>
+          <p>
+            باقات تجمع العسل والمكسرات بتغليف أنيق، مناسبة للضيافة، الهدايا
+            الرسمية، والعملاء المميزين.
+          </p>
+        </div>
+        <a class="btn primary" href="#products">استعرض الباقات</a>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div>
+        <strong>وادي الذهب</strong>
+        <p>نموذج متجر عسل يمني صممه أيمن كبورتفوليو لتجربة تجارة إلكترونية عملية.</p>
+      </div>
+      <div class="footer-actions">
+        <a href="tel:+967779299051">+967 779 299 051</a>
+        <a href="mailto:aymnalmmry06@gmail.com">aymnalmmry06@gmail.com</a>
+      </div>
+    </footer>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="cart-panel">
+        <div class="cart-head">
+          <div>
+            <span>سلة الطلب</span>
+            <strong id="cartTotal">0 ر.س</strong>
+          </div>
+          <button class="icon-button" type="button" id="closeCart" aria-label="إغلاق السلة">×</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <a class="checkout" id="checkoutLink" href="#" target="_blank" rel="noopener noreferrer">
+          إرسال الطلب عبر واتساب
+        </a>
+      </div>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
