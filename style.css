@@ -566,6 +566,39 @@ html[dir="ltr"] .hero-copy {
   border-color: #fff;
 }
 
+.honey-project {
+  margin-top: 24px;
+  background:
+    linear-gradient(135deg, rgba(43, 26, 15, 0.96), rgba(124, 73, 17, 0.86)),
+    #2b1a0f;
+}
+
+.honey-project::before {
+  background: rgba(242, 186, 54, 0.24);
+}
+
+.honey-project .btn.primary {
+  color: #2b1a0f;
+  background: linear-gradient(135deg, #fff0b5, #f2ba36 56%, #c78319);
+  border-color: transparent;
+}
+
+.honey-preview {
+  background:
+    linear-gradient(180deg, rgba(255, 225, 154, 0.22), rgba(255, 255, 255, 0.05)),
+    linear-gradient(135deg, rgba(255, 241, 196, 0.16), rgba(242, 186, 54, 0.1));
+}
+
+.honey-preview .preview-lines span {
+  background: rgba(255, 225, 154, 0.24);
+}
+
+.honey-preview .preview-lines span:nth-child(4) {
+  background:
+    radial-gradient(circle at 25% 24%, rgba(255, 225, 154, 0.82), transparent 26%),
+    linear-gradient(135deg, rgba(255, 225, 154, 0.34), rgba(199, 131, 25, 0.22));
+}
+
 .project-preview {
   position: relative;
   z-index: 1;
