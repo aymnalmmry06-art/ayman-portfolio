@@ -599,6 +599,39 @@ html[dir="ltr"] .hero-copy {
     linear-gradient(135deg, rgba(255, 225, 154, 0.34), rgba(199, 131, 25, 0.22));
 }
 
+.perfume-project {
+  margin-top: 24px;
+  background:
+    linear-gradient(135deg, rgba(24, 17, 15, 0.97), rgba(75, 20, 33, 0.88)),
+    #18110f;
+}
+
+.perfume-project::before {
+  background: rgba(234, 214, 176, 0.18);
+}
+
+.perfume-project .btn.primary {
+  color: #18110f;
+  background: linear-gradient(135deg, #fff1d3, #d8b06f 52%, #ad7a3d);
+  border-color: transparent;
+}
+
+.perfume-preview {
+  background:
+    linear-gradient(180deg, rgba(234, 214, 176, 0.2), rgba(255, 255, 255, 0.05)),
+    linear-gradient(135deg, rgba(75, 20, 33, 0.22), rgba(216, 176, 111, 0.12));
+}
+
+.perfume-preview .preview-lines span {
+  background: rgba(234, 214, 176, 0.22);
+}
+
+.perfume-preview .preview-lines span:nth-child(4) {
+  background:
+    radial-gradient(circle at 68% 28%, rgba(234, 214, 176, 0.78), transparent 25%),
+    linear-gradient(135deg, rgba(75, 20, 33, 0.42), rgba(216, 176, 111, 0.2));
+}
+
 .project-preview {
   position: relative;
   z-index: 1;

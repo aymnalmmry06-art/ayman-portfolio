@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title desc">
+  <title id="title">Dar Al-Athar Perfumes logo</title>
+  <desc id="desc">Luxury perfume brand monogram with a fragrance drop and gold frame.</desc>
+  <defs>
+    <linearGradient id="gold" x1="32" y1="22" x2="148" y2="158" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF0CC"/>
+      <stop offset=".45" stop-color="#C89A55"/>
+      <stop offset="1" stop-color="#8C5A2E"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="22" y1="18" x2="156" y2="162" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4B1421"/>
+      <stop offset="1" stop-color="#18110F"/>
+    </linearGradient>
+  </defs>
+  <circle cx="90" cy="90" r="78" fill="url(#dark)"/>
+  <circle cx="90" cy="90" r="66" fill="none" stroke="url(#gold)" stroke-width="8"/>
+  <path fill="url(#gold)" d="M90 38c18 24 31 43 31 62 0 20-13 35-31 35s-31-15-31-35c0-19 13-38 31-62Z"/>
+  <path fill="#18110F" d="M90 67c18 0 30 13 30 30 0 24-22 39-52 32l5-18c19 5 29-2 29-14 0-8-6-14-14-14-6 0-11 3-17 10l-13-10c8-10 18-16 32-16Z"/>
+  <path fill="#FFF3D7" d="M82 92c0-12 7-24 14-34-14 17-24 31-24 45 0 13 8 23 20 24-6-7-10-19-10-35Z" opacity=".55"/>
+</svg>

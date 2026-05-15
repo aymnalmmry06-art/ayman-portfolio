@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="دار الأثر للعطور، متجر عطور فاخر بتجربة شراء عملية وهوية بصرية راقية."
+    />
+    <title>دار الأثر | متجر عطور فاخر</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="دار الأثر">
+        <img class="brand-mark" src="assets/logo.svg" alt="" />
+        <span>
+          <strong>دار الأثر</strong>
+          <small>عطور فاخرة</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="روابط الموقع">
+        <a href="#products">العطور</a>
+        <a href="#signature">التجربة</a>
+        <a href="#sets">الباقات</a>
+        <a href="#contact">التواصل</a>
+      </nav>
+
+      <button class="cart-button" type="button" id="openCart" aria-label="فتح السلة">
+        <span>السلة</span>
+        <strong id="cartCount">0</strong>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">روائح تترك أثراً</p>
+          <h1>متجر عطور فاخر يصنع لحظة شراء تشبه قيمة العطر نفسه.</h1>
+          <p>
+            تجربة تجارة إلكترونية راقية لعرض العطور الشرقية والفرنسية، مع
+            تصنيفات واضحة، سلة طلب، وواجهة مصممة لتمنح العميل إحساس الفخامة
+            قبل الشراء.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#products">استكشف العطور</a>
+            <a class="btn secondary" href="#signature">قصة التجربة</a>
+          </div>
+          <div class="hero-stats" aria-label="إحصائيات المتجر">
+            <span><strong>12</strong> عطر مختار</span>
+            <span><strong>3</strong> عائلات عطرية</span>
+            <span><strong>VIP</strong> تغليف هدايا</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="زجاجة عطر فاخرة">
+          <img src="assets/perfume-hero.svg" alt="زجاجة عطر فاخرة" />
+          <div class="hero-badge">
+            <span>الإصدار المميز</span>
+            <strong>أثر العود الملكي</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="مميزات المتجر">
+        <div>
+          <strong>تركيبات مختارة</strong>
+          <span>عود، مسك، ورد، وعنبر</span>
+        </div>
+        <div>
+          <strong>تصميم عملي</strong>
+          <span>بحث وفلاتر وسلة واتساب</span>
+        </div>
+        <div>
+          <strong>هدايا فاخرة</strong>
+          <span>باقات مناسبة للمناسبات والعملاء</span>
+        </div>
+      </section>
+
+      <section class="section products" id="products">
+        <div class="section-heading">
+          <span>المتجر</span>
+          <h2>اختيار سريع حسب العائلة العطرية والمناسبة.</h2>
+        </div>
+
+        <div class="shop-toolbar" aria-label="أدوات تصفية العطور">
+          <div class="filters" id="filters">
+            <button class="filter active" type="button" data-filter="all">الكل</button>
+            <button class="filter" type="button" data-filter="oud">عود</button>
+            <button class="filter" type="button" data-filter="floral">زهري</button>
+            <button class="filter" type="button" data-filter="fresh">منعش</button>
+            <button class="filter" type="button" data-filter="gift">باقات</button>
+          </div>
+
+          <label class="search-box">
+            <span>بحث</span>
+            <input id="searchInput" type="search" placeholder="ابحث عن عود، مسك، ورد..." />
+          </label>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="section signature" id="signature">
+        <div class="signature-image">
+          <img src="assets/perfume-oud.svg" alt="عطر عود فاخر" />
+        </div>
+        <div class="signature-copy">
+          <span class="eyebrow">تفاصيل تزيد الثقة</span>
+          <h2>المتجر لا يبيع منتجاً فقط، بل يبيع إحساساً منظماً.</h2>
+          <div class="signature-list">
+            <article>
+              <strong>ملاحظات عطرية واضحة</strong>
+              <p>كل عطر يعرض المزاج، العائلة العطرية، الحجم، وسعره.</p>
+            </article>
+            <article>
+              <strong>سلة طلب مختصرة</strong>
+              <p>العميل يضيف العطور ثم يرسل الطلب مباشرة عبر واتساب.</p>
+            </article>
+            <article>
+              <strong>هوية فاخرة</strong>
+              <p>ألوان داكنة مع شامبانيا وعنابي لتناسب عالم العطور.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="sets-band" id="sets">
+        <div>
+          <span>باقات هدايا</span>
+          <h2>صناديق عطور VIP للمناسبات والعملاء المميزين.</h2>
+          <p>
+            باقات تجمع العطر، المسك، والبخور بتغليف راقٍ يناسب الهدايا الشخصية
+            والرسمية.
+          </p>
+        </div>
+        <a class="btn primary" href="#products">استعرض الباقات</a>
+      </section>
+
+      <section class="contact-showcase" id="contact">
+        <div class="contact-copy">
+          <span class="eyebrow">بيانات التواصل</span>
+          <h2>اطلب عطرك أو ناقش فكرة متجرك مباشرة مع أيمن.</h2>
+        </div>
+        <div class="contact-cards" aria-label="بيانات أيمن">
+          <a class="contact-card" href="tel:+967779299051">
+            <span>الهاتف</span>
+            <strong dir="ltr">+967 779 299 051</strong>
+          </a>
+          <a class="contact-card featured" href="https://wa.me/967779299051" target="_blank" rel="noopener noreferrer">
+            <span>واتساب مباشر</span>
+            <strong>إرسال طلب الآن</strong>
+          </a>
+          <a class="contact-card" href="mailto:aymnalmmry06@gmail.com">
+            <span>البريد الإلكتروني</span>
+            <strong dir="ltr">aymnalmmry06@gmail.com</strong>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>دار الأثر</strong>
+        <p>نموذج متجر عطور فاخر صممه أيمن كبورتفوليو لتجربة تجارة إلكترونية راقية.</p>
+      </div>
+      <div class="footer-actions">
+        <a href="tel:+967779299051">+967 779 299 051</a>
+        <a href="mailto:aymnalmmry06@gmail.com">aymnalmmry06@gmail.com</a>
+      </div>
+    </footer>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="cart-panel">
+        <div class="cart-head">
+          <div>
+            <span>سلة الطلب</span>
+            <strong id="cartTotal">0 ر.س</strong>
+          </div>
+          <button class="icon-button" type="button" id="closeCart" aria-label="إغلاق السلة">×</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <a class="checkout" id="checkoutLink" href="#" target="_blank" rel="noopener noreferrer">
+          إرسال الطلب عبر واتساب
+        </a>
+      </div>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
