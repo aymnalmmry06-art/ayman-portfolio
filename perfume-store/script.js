@@ -1,103 +1,63 @@
 const products = [
   {
     id: "royal-oud",
-    name: "أثر العود الملكي",
-    category: "oud",
-    tag: "فاخر",
+    name: "Royal Oud 01",
+    arName: "أثر العود الملكي",
+    category: "evening",
+    tag: "مسائي",
     price: 340,
-    size: "100 مل",
-    mood: "عود وعنبر",
     image: "assets/perfume-oud.svg",
-    desc: "عطر شرقي عميق بطابع ملكي مناسب للمساء والمناسبات."
-  },
-  {
-    id: "velvet-oud",
-    name: "عود فيلفت",
-    category: "oud",
-    tag: "مميز",
-    price: 260,
-    size: "75 مل",
-    mood: "عود ناعم",
-    image: "assets/perfume-oud.svg",
-    desc: "مزيج عود ناعم مع لمسة جلدية هادئة وثبات طويل."
+    notes: ["عود", "عنبر", "جلد"],
+    desc: "حضور رسمي عميق للمساء والمناسبات."
   },
   {
     id: "rose-noir",
-    name: "روز نوار",
-    category: "floral",
-    tag: "زهري",
-    price: 210,
-    size: "100 مل",
-    mood: "ورد ومسك",
-    image: "assets/perfume-rose.svg",
-    desc: "ورد فاخر مع مسك أبيض، مناسب للهدايا والاستخدام اليومي."
-  },
-  {
-    id: "musk-pearl",
-    name: "مسك بيرل",
-    category: "floral",
+    name: "Rose Noir 02",
+    arName: "روز نوار",
+    category: "soft",
     tag: "ناعم",
-    price: 145,
-    size: "50 مل",
-    mood: "مسك نظيف",
+    price: 210,
     image: "assets/perfume-rose.svg",
-    desc: "رائحة نظيفة وناعمة تناسب الذوق الهادئ والمكتب."
+    notes: ["ورد", "مسك", "فانيلا"],
+    desc: "أناقة هادئة تصلح كهدية راقية."
   },
   {
-    id: "citrus-mood",
-    name: "سيتروس مود",
-    category: "fresh",
-    tag: "منعش",
-    price: 165,
-    size: "100 مل",
-    mood: "حمضيات وخشب",
-    image: "assets/perfume-fresh.svg",
-    desc: "افتتاحية منعشة مع قاعدة خشبية، مثالي للصباح."
-  },
-  {
-    id: "blue-mist",
-    name: "بلو ميست",
-    category: "fresh",
+    id: "citrus-veil",
+    name: "Citrus Veil 03",
+    arName: "سيتروس فيل",
+    category: "daily",
     tag: "يومي",
-    price: 120,
-    size: "50 مل",
-    mood: "نظيف ومنعش",
+    price: 165,
     image: "assets/perfume-fresh.svg",
-    desc: "عطر يومي خفيف يعطي إحساس النظافة والانتعاش."
+    notes: ["حمضيات", "خشب", "نظافة"],
+    desc: "انتعاش صباحي مناسب للعمل والاستخدام اليومي."
   },
   {
-    id: "attar-set",
-    name: "صندوق الأثر VIP",
+    id: "private-set",
+    name: "Private Set",
+    arName: "صندوق الأثر VIP",
     category: "gift",
     tag: "هدية",
     price: 520,
-    size: "3 قطع",
-    mood: "عطر ومسك وبخور",
     image: "assets/perfume-gift.svg",
-    desc: "باقة هدايا فاخرة تجمع العطر والمسك والبخور."
-  },
-  {
-    id: "mini-set",
-    name: "مجموعة التجربة",
-    category: "gift",
-    tag: "باقة",
-    price: 180,
-    size: "4 عينات",
-    mood: "تشكيلة مختارة",
-    image: "assets/perfume-gift.svg",
-    desc: "مجموعة صغيرة لتجربة الروائح قبل اختيار العطر الكامل."
+    notes: ["عطر", "مسك", "بخور"],
+    desc: "باقة هدايا رسمية بتغليف فاخر."
   }
 ];
 
+const recommendations = {
+  evening: "نقترح: أثر العود الملكي. مناسب للحضور القوي والمناسبات المسائية.",
+  soft: "نقترح: روز نوار. هدية أنيقة وناعمة بطابع ورد ومسك.",
+  daily: "نقترح: سيتروس فيل. رائحة منعشة وخفيفة للاستخدام اليومي."
+};
+
 const state = {
   filter: "all",
-  query: "",
   cart: {}
 };
 
 const productGrid = document.querySelector("#productGrid");
 const filters = document.querySelector("#filters");
-const searchInput = document.querySelector("#searchInput");
 const cartDrawer = document.querySelector("#cartDrawer");
 const openCart = document.querySelector("#openCart");
 const closeCart = document.querySelector("#closeCart");
@@ -105,50 +65,40 @@ const cartItems = document.querySelector("#cartItems");
 const cartCount = document.querySelector("#cartCount");
 const cartTotal = document.querySelector("#cartTotal");
 const checkoutLink = document.querySelector("#checkoutLink");
+const advisorResult = document.querySelector("#advisorResult");
 
 function formatPrice(value) {
   return `${value.toLocaleString("ar-SA")} ر.س`;
 }
 
-function filteredProducts() {
-  return products.filter((product) => {
-    const matchesFilter = state.filter === "all" || product.category === state.filter;
-    const text = `${product.name} ${product.mood} ${product.desc}`;
-    const matchesQuery = text.includes(state.query.trim());
-    return matchesFilter && matchesQuery;
-  });
+function visibleProducts() {
+  return products.filter((product) => state.filter === "all" || product.category === state.filter);
 }
 
 function renderProducts() {
-  const list = filteredProducts();
-  productGrid.innerHTML = list
+  productGrid.innerHTML = visibleProducts()
     .map(
       (product) => `
-        <article class="product-card">
-          <div class="product-media">
-            <img src="${product.image}" alt="${product.name}" loading="lazy" />
+        <article class="scent-card">
+          <figure>
+            <img src="${product.image}" alt="${product.arName}" loading="lazy" />
             <span class="tag">${product.tag}</span>
-          </div>
-          <div class="product-body">
-            <h3>${product.name}</h3>
+          </figure>
+          <div class="scent-info">
+            <h3>${product.arName}</h3>
             <p>${product.desc}</p>
-            <div class="product-meta">
-              <span>${product.mood}</span>
-              <span>${product.size}</span>
+            <div class="notes">
+              ${product.notes.map((note) => `<span>${note}</span>`).join("")}
             </div>
-            <div class="product-buy">
+            <div class="scent-buy">
               <strong class="price">${formatPrice(product.price)}</strong>
-              <button class="add-button" type="button" data-add="${product.id}">أضف للسلة</button>
+              <button type="button" data-add="${product.id}">أضف للطلب</button>
             </div>
           </div>
         </article>
       `
     )
     .join("");
-
-  if (!list.length) {
-    productGrid.innerHTML = `<div class="empty">لا توجد عطور مطابقة للبحث الحالي.</div>`;
-  }
 }
 
 function cartList() {
@@ -173,12 +123,12 @@ function renderCart() {
         .map(
           (item) => `
             <div class="cart-item">
-              <img src="${item.image}" alt="${item.name}" />
+              <img src="${item.image}" alt="${item.arName}" />
               <div>
-                <strong>${item.name}</strong>
+                <strong>${item.arName}</strong>
                 <span>${formatPrice(item.price)} × ${item.qty}</span>
               </div>
-              <div class="qty" aria-label="كمية ${item.name}">
+              <div class="qty" aria-label="كمية ${item.arName}">
                 <button type="button" data-dec="${item.id}">-</button>
                 <span>${item.qty}</span>
                 <button type="button" data-inc="${item.id}">+</button>
@@ -187,14 +137,14 @@ function renderCart() {
           `
         )
         .join("")
-    : `<div class="empty">السلة فارغة. أضف عطراً واحداً على الأقل.</div>`;
+    : `<div class="empty">لم تختر عطراً بعد.</div>`;
 
   const orderText = list
-    .map((item) => `${item.name} - الكمية ${item.qty} - ${formatPrice(item.price * item.qty)}`)
+    .map((item) => `${item.arName} - الكمية ${item.qty} - ${formatPrice(item.price * item.qty)}`)
     .join("%0A");
   checkoutLink.href = list.length
     ? `https://wa.me/967779299051?text=مرحباً، أريد طلب عطور:%0A${orderText}%0Aالإجمالي: ${formatPrice(total)}`
-    : "#products";
+    : "#scents";
 }
 
 function addToCart(id) {
@@ -209,13 +159,8 @@ filters.addEventListener("click", (event) => {
   if (!button) return;
 
   state.filter = button.dataset.filter;
-  document.querySelectorAll(".filter").forEach((item) => item.classList.remove("active"));
+  document.querySelectorAll(".tab").forEach((item) => item.classList.remove("active"));
   button.classList.add("active");
-  renderProducts();
-});
-
-searchInput.addEventListener("input", (event) => {
-  state.query = event.target.value;
   renderProducts();
 });
 
@@ -224,13 +169,21 @@ productGrid.addEventListener("click", (event) => {
   if (button) addToCart(button.dataset.add);
 });
 
+document.querySelector(".advisor-options").addEventListener("click", (event) => {
+  const button = event.target.closest("[data-mood]");
+  if (!button) return;
+
+  advisorResult.innerHTML = `
+    <span>اقتراح المستشار</span>
+    <strong>${recommendations[button.dataset.mood]}</strong>
+  `;
+});
+
 cartItems.addEventListener("click", (event) => {
   const inc = event.target.closest("[data-inc]");
   const dec = event.target.closest("[data-dec]");
 
-  if (inc) {
-    state.cart[inc.dataset.inc] += 1;
-  }
+  if (inc) state.cart[inc.dataset.inc] += 1;
 
   if (dec) {
     const id = dec.dataset.dec;
